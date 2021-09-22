@@ -2,31 +2,24 @@
 #include <string>
 
 
-int multiply(int num1, int num2) {
-    return num1 * num2;
+int sin(){
+    int foo [5] = { 16, 2, 77, 40, 12 };
+    // 5 - 3cos2 => 1,3,4,5,6,7,7,8,4,5,5,4,3,3,2,4,2,2,3,4,4
+    int n, result=0;
+    for ( n=0 ; n<5 ; ++n )
+    {
+        result += foo[n];
+
+        std::cout << result;
+        std::cout << ",";
+    }
+
+
+
 }
 
 int main() {
 
-    std::string greeting = "Hello STRING";
-    int year = 0;
-
-    while (year < 1000){
-        int result = multiply(2,2);
-        std::string s = std::to_string(result);
-
-        std::cout << "multiplication result is " + s << std::endl;
-        std::cout << "Please enter your birth year" << std::endl;
-        std::cin >> year;
-
-        if (year == 0) {
-            std::cout << "THIS IS WRONG ITS ZERO" << std::endl;
-        } else if (year < 20) {
-            std::cout << "Less then twenty" << std::endl;
-        }
-    }
-
-    std::cout << "GAME OVER" << std::endl;
-
+    sin();
     return 0;
 }
