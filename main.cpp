@@ -19,8 +19,19 @@ int main() {
         std::cout << "Please enter your birth year" << std::endl;
         std::cin >> year;
 
-        if (year == 0) {
-            std::cout << "THIS IS WRONG ITS ZERO" << std::endl;
+        if (year > 20)
+        {
+            int alke = multiply(year,2);
+            std::string d = std::to_string(alke);
+            std::cout << "Multiplication your birth year on 2"  + d << std::endl;
+            // umnozhitj got na 2 pri pomoshchi funkcii multiply
+            // perevesti rezuljtat v tip string
+            // otpravitj eto v terminal - napechatj na ekrane
+
+
+
+
+
         } else if (year < 20) {
             std::cout << "Less then twenty" << std::endl;
         }
